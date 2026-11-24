@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <rect x="25" y="22" width="190" height="136" rx="24" fill="#FFF7F1"/>
+  <rect x="67" y="43" width="108" height="100" rx="12" fill="#fff" stroke="#F2D6C2" stroke-width="3"/>
+  <path d="M94 43v-7h54v7" stroke="#E9B994" stroke-linecap="round" stroke-width="4"/>
+  <rect x="83" y="65" width="14" height="14" rx="4" stroke="#DCA67E" stroke-width="3"/>
+  <path d="m86 72 3 3 6-7" stroke="#C47745" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path d="M106 72h48" stroke="#E5C6B1" stroke-linecap="round" stroke-width="4"/>
+  <rect x="83" y="91" width="14" height="14" rx="4" stroke="#E8CBB8" stroke-width="3"/>
+  <path d="M106 98h42" stroke="#E5C6B1" stroke-linecap="round" stroke-width="4"/>
+  <rect x="83" y="117" width="14" height="14" rx="4" stroke="#E8CBB8" stroke-width="3"/>
+  <path d="M106 124h34" stroke="#E5C6B1" stroke-linecap="round" stroke-width="4"/>
+  <circle cx="181" cy="127" r="14" fill="#FBE6D5"/>
+  <path d="M181 120v8l5 3" stroke="#C47745" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path d="M47 148h146" stroke="#F1DDCF" stroke-linecap="round" stroke-width="3"/>
+</svg>

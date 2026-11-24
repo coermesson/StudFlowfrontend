@@ -1,0 +1,161 @@
+.header {
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.header__brand-name {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header__navigation {
+  --nav-bg: #e6e6e6; /* cinza mais escuro da barra */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  background-color: var(--nav-bg);
+  border-radius: 999px;
+}
+
+.header__link {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background-color: transparent;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover com a mesma cor de fundo estabelecida na navegação */
+.header__link:hover {
+  color: #000000;
+  background-color: var(--nav-bg);
+}
+
+/* Estado ativo padrão (caso não tenha cor específica) */
+.header__link.header__link--active,
+.header__link.active,
+.header__link[aria-current="page"] {
+  color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+/* Kanban -> #CEF2CE */
+.header__link--kanban.header__link--active,
+.header__link--kanban.active,
+.header__link--kanban[aria-current="page"],
+.header__link[data-tab="kanban"].header__link--active,
+.header__link[data-tab="kanban"].active,
+.header__link[data-tab="kanban"][aria-current="page"] {
+  background-color: #CEF2CE;
+  color: #000000;
+}
+
+/* Todo -> #DCBAFF */
+.header__link--todo.header__link--active,
+.header__link--todo.active,
+.header__link--todo[aria-current="page"],
+.header__link[data-tab="todo"].header__link--active,
+.header__link[data-tab="todo"].active,
+.header__link[data-tab="todo"][aria-current="page"] {
+  background-color: #DCBAFF;
+  color: #000000;
+}
+
+/* Pomodoro -> #FFEBAA */
+.header__link--pomodoro.header__link--active,
+.header__link--pomodoro.active,
+.header__link--pomodoro[aria-current="page"],
+.header__link[data-tab="pomodoro"].header__link--active,
+.header__link[data-tab="pomodoro"].active,
+.header__link[data-tab="pomodoro"][aria-current="page"] {
+  background-color: #FFEBAA;
+  color: #000000;
+}
+
+/* Cursos -> #B6F3F8 */
+.header__link--cursos.header__link--active,
+.header__link--cursos.active,
+.header__link--cursos[aria-current="page"],
+.header__link[data-tab="cursos"].header__link--active,
+.header__link[data-tab="cursos"].active,
+.header__link[data-tab="cursos"][aria-current="page"] {
+  background-color: #B6F3F8;
+  color: #000000;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h, #000000);
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .header__user-name {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 14px 0;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header__navigation {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 16px;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+
+  .header__link {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .header__brand-name {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,76 @@
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-menu__trigger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-menu__trigger:hover {
+  background-color: #c5c5c5;
+}
+
+.profile-menu__trigger svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.profile-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 180px;
+  padding: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.profile-menu__item {
+  width: 100%;
+  padding: 11px 12px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.profile-menu__item:hover {
+  background-color: #f2f2f2;
+}
+
+.profile-menu__logout {
+  color: #000000;
+}
+
+.profile-menu__user {
+  padding: 11px 12px;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}

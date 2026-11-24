@@ -1,0 +1,215 @@
+
+.pagina-perfil {
+  width: 100%;
+  min-height: 100vh;
+  padding: 48px 40px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.conteudo-perfil {
+  width: 100%;
+  max-width: 760px;
+  margin: 0;
+  text-align: left;
+}
+
+/* CABEÇALHO */
+
+.cabecalho-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.cabecalho-perfil > span {
+  color: #71717a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.cabecalho-perfil h1 {
+  margin: 0;
+  color: #18181b;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.cabecalho-perfil p {
+  margin: 0;
+  color: #71717a;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* FORMULÁRIO */
+
+.formulario-perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+  text-align: left;
+}
+
+/* SEÇÕES */
+
+.secao-perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+}
+
+.titulo-secao-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+}
+
+.titulo-secao-perfil h2 {
+  margin: 0;
+  color: #18181b;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.titulo-secao-perfil p {
+  margin: 0;
+  color: #71717a;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* CAMPOS */
+
+.campo-perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  text-align: left;
+}
+
+.campo-perfil label {
+  color: #27272a;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.campo-perfil input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #d4d4d8;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #18181b;
+  font-family: inherit;
+  font-size: 14px;
+  text-align: left;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-perfil input::placeholder {
+  color: #a1a1aa;
+}
+
+.campo-perfil input:focus {
+  border-color: #18181b;
+  box-shadow: 0 0 0 3px rgb(24 24 27 / 7%);
+}
+
+/* MENSAGENS */
+
+.mensagem-perfil {
+  margin: -12px 0 0;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.erro-perfil {
+  border: 1px solid #fecaca;
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.sucesso-perfil {
+  border: 1px solid #bbf7d0;
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+/* BOTÃO */
+
+.acoes-perfil {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.acoes-perfil button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 7px;
+  background-color: #18181b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.acoes-perfil button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.acoes-perfil button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+  .pagina-perfil {
+    padding: 32px 20px;
+  }
+
+  .cabecalho-perfil h1 {
+    font-size: 26px;
+  }
+
+  .formulario-perfil {
+    gap: 24px;
+  }
+
+  .secao-perfil {
+    gap: 18px;
+    padding-bottom: 24px;
+  }
+
+  .acoes-perfil button {
+    width: 100%;
+  }
+}

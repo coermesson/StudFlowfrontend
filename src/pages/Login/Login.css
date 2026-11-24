@@ -1,0 +1,410 @@
+
+.pagina-login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background-color: #ffffff;
+}
+
+
+
+.painel-apresentacao {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 44px 8%;
+  background-color: #18181b;
+  color: #ffffff;
+}
+
+.logo-login {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  color: #fd5ea8;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.logo-login span {
+  color: #a1a1aa;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+
+.apresentacao-texto {
+  position: relative;
+  z-index: 2;
+  max-width: 510px;
+  margin-top: auto;
+  margin-bottom: 65px;
+}
+
+.etiqueta-login {
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.apresentacao-texto h1 {
+  margin: 22px 0;
+  color: #ffffff;
+  font-size: clamp(36px, 4vw, 55px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.apresentacao-texto h1 span {
+  color: #f59dc1;
+}
+
+.apresentacao-texto p {
+  max-width: 390px;
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.apresentacao-rodape {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  color: #71717a;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* ÍCONES FLUTUANTES */
+
+.elementos-flutuantes {
+  position: absolute;
+  top: 19%;
+  right: 8%;
+  width: 300px;
+  height: 310px;
+  pointer-events: none;
+}
+
+.icone-flutuante {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 140px;
+  padding: 14px 17px;
+  border: 1px solid #3f3f46;
+  border-radius: 12px;
+  background-color: #27272b;
+  box-shadow: 0 12px 35px rgb(0 0 0 / 20%);
+  animation: flutuar 5s ease-in-out infinite;
+}
+
+.icone-flutuante svg {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icone-flutuante span {
+  color: #e4e4e7;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* CORES DOS ÍCONES */
+
+.icone-kanban {
+  top: 5px;
+  left: 5px;
+  color: #a78bfa;
+  animation-delay: 0s;
+}
+
+.icone-todo {
+  top: 75px;
+  right: 0;
+  color: #4ade80;
+  animation-delay: -1.2s;
+}
+
+.icone-cursos {
+  top: 165px;
+  left: 0;
+  color: #60a5fa;
+  animation-delay: -2.4s;
+}
+
+.icone-arquivos {
+  top: 245px;
+  right: 12px;
+  color: #fbbf24;
+  animation-delay: -3.6s;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* PAINEL DIREITO */
+
+.painel-formulario {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* FORMULÁRIO */
+
+.formulario-login {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 13vh 0 0 9%;
+}
+
+.formulario-cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulario-cabecalho > span {
+  color: #71717a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.formulario-cabecalho h2 {
+  margin: 8px 0 0;
+  color: #18181b;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.formulario-cabecalho p {
+  margin: 0;
+  color: #71717a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* CAMPOS */
+
+.campos-login {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.campo-login {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.campo-login label {
+  color: #27272a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.campo-login input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d4d4d8;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #18181b;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-login input::placeholder {
+  color: #a1a1aa;
+}
+
+.campo-login input:focus {
+  border-color: #18181b;
+  box-shadow: 0 0 0 3px rgb(24 24 27 / 7%);
+}
+
+/* BOTÃO */
+
+.formulario-login > button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #18181b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.formulario-login > button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.formulario-login > button:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.formulario-login > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ERRO */
+
+.mensagem-erro {
+  margin: -10px 0 0;
+  padding: 12px;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+  background-color: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* CADASTRO */
+
+.texto-cadastro {
+  padding-top: 22px;
+  border-top: 1px solid #eeeeee;
+}
+
+.texto-cadastro p {
+  margin: 0;
+  color: #71717a;
+  font-size: 13px;
+}
+
+.texto-cadastro a {
+  color: #18181b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.texto-cadastro a:hover {
+  text-decoration: underline;
+}
+
+
+.pagina-login {
+  width: 100%;
+  min-height: 100vh;
+}
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .pagina-login {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .elementos-flutuantes {
+    right: 3%;
+    transform: scale(0.85);
+    transform-origin: top right;
+  }
+
+  .apresentacao-texto h1 {
+    font-size: 38px;
+  }
+
+  .formulario-login {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .pagina-login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .painel-apresentacao {
+    min-height: 350px;
+    padding: 28px 24px;
+  }
+
+  .elementos-flutuantes {
+    top: 65px;
+    right: 10px;
+    transform: scale(0.65);
+    transform-origin: top right;
+    opacity: 0.8;
+  }
+
+  .apresentacao-texto {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .apresentacao-texto h1 {
+    max-width: 390px;
+    font-size: 32px;
+  }
+
+  .apresentacao-texto p {
+    max-width: 340px;
+    font-size: 13px;
+  }
+
+  .apresentacao-rodape {
+    display: none;
+  }
+
+  .painel-formulario {
+    min-height: auto;
+  }
+
+  .formulario-login {
+    max-width: none;
+    margin: 48px 24px;
+    width: auto;
+    gap: 24px;
+  }
+
+  .formulario-cabecalho h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  .elementos-flutuantes {
+    opacity: 0.45;
+    transform: scale(0.5);
+  }
+}

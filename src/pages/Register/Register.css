@@ -1,0 +1,228 @@
+@import '../Login/Login.css';
+.pagina-cadastro {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background-color: #ffffff;
+}
+
+/* PAINEL DIREITO */
+
+.formulario-cadastro {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 9vh 0 0 9%;
+}
+
+/* CABEÇALHO */
+
+.formulario-cadastro .formulario-cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulario-cadastro .formulario-cabecalho > span {
+  color: #71717a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.formulario-cadastro .formulario-cabecalho h2 {
+  margin: 8px 0 0;
+  color: #18181b;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+}
+
+.formulario-cadastro .formulario-cabecalho p {
+  margin: 0;
+  color: #71717a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* CAMPOS */
+
+.campos-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.campo-cadastro label {
+  color: #27272a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.campo-cadastro input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #d4d4d8;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #18181b;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-cadastro input::placeholder {
+  color: #a1a1aa;
+}
+
+.campo-cadastro input:focus {
+  border-color: #18181b;
+  box-shadow: 0 0 0 3px rgb(24 24 27 / 7%);
+}
+
+/* BOTÃO */
+
+.formulario-cadastro > button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #18181b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.formulario-cadastro > button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.formulario-cadastro > button:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.formulario-cadastro > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LINK PARA LOGIN */
+
+.texto-cadastro {
+  padding-top: 22px;
+  border-top: 1px solid #eeeeee;
+}
+
+.texto-cadastro p {
+  margin: 0;
+  color: #71717a;
+  font-size: 13px;
+}
+
+.texto-cadastro a {
+  color: #18181b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.texto-cadastro a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .pagina-cadastro {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pagina-cadastro .elementos-flutuantes {
+    right: 3%;
+    transform: scale(0.85);
+    transform-origin: top right;
+  }
+
+  .pagina-cadastro .apresentacao-texto h1 {
+    font-size: 38px;
+  }
+
+  .formulario-cadastro {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .pagina-cadastro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pagina-cadastro .painel-apresentacao {
+    min-height: 350px;
+    padding: 28px 24px;
+  }
+
+  .pagina-cadastro .elementos-flutuantes {
+    top: 65px;
+    right: 10px;
+    transform: scale(0.65);
+    transform-origin: top right;
+    opacity: 0.8;
+  }
+
+  .pagina-cadastro .apresentacao-texto {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .pagina-cadastro .apresentacao-texto h1 {
+    max-width: 390px;
+    font-size: 32px;
+  }
+
+  .pagina-cadastro .apresentacao-texto p {
+    max-width: 340px;
+    font-size: 13px;
+  }
+
+  .pagina-cadastro .apresentacao-rodape {
+    display: none;
+  }
+
+  .pagina-cadastro .painel-formulario {
+    min-height: auto;
+  }
+
+  .formulario-cadastro {
+    width: auto;
+    max-width: none;
+    margin: 40px 24px;
+    gap: 24px;
+  }
+
+  .formulario-cadastro .formulario-cabecalho h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pagina-cadastro .elementos-flutuantes {
+    opacity: 0.45;
+    transform: scale(0.5);
+  }
+}
